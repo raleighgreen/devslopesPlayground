@@ -2,38 +2,47 @@
 
 import UIKit
 
-// Type inference - the string type is inferred - reccomended
-var str1 = "Hello, playground"
+// Numbers
 
-// Explicitly declared type
-var str2: String = "hello, buddy"
+// Intergers
+var age = 30 // Type inference - reccomended
 
-// String Concatenation
-var firstName = "yo"
-var lastName = "mama"
+var weight: Int = 200 // Explicitly declared type
 
-var fullName1 = firstName + " " + lastName
+// If need a long number, use a Double
+var someLongNumb: Double = 91872634987612398764198237647651237864518
 
-// Sting Interpolation
-var age = 42
-var fullName2 = "\(firstName) \(lastName) is \(age)"
+// Also use a Double for decimal points - this is preferred to Floats, 
+// So, always use Doubles 
 
-// Use dot syntax to call functions (properties) on the string itself
-fullName2.append(" III")
+var milesRan = 56.45
 
-var bookTitle = "here is a lowercase title"
+var pi: Float = 3.14
 
-bookTitle = bookTitle.capitalized
-bookTitle = bookTitle.uppercased()
+// Arithmetic Operators
+// + - / *
 
-// Replaceing stings
-var sentence = "ok, here is some text including the word shrub"
+var area = 15 * 20
 
-if sentence.contains("shrub") || sentence.contains("text") {
-    sentence.replacingOccurrences(of: "shrub", with: "snap")
-    sentence.replacingOccurrences(of: "text", with: "tuts")
+var sum = 5 + 6
+
+var diff = 10 - 3
+
+var div = 12 / 3
+
+var remainder = 12 % 5
+
+var result = "The result of 12 / 5 is \(div) with a remainder of \(remainder)"
+
+// How to determine if a number is even or odd
+
+var randomNum = 14
+
+if randomNum % 2 == 0 {
+    print("this is an even number")
+} else {
+    print("this is an odd number")
 }
 
-
-
-
+// Order of opporations applies
+var result2 = 15 * ((5 + 7) / 3)
