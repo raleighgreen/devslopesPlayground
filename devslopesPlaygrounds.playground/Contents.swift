@@ -2,16 +2,36 @@
 
 import UIKit
 
-// Logical NOT operator - unary prefix operator
+// Arrays
 
-let allowedEntry = false
+var employeeSalaries = [45000.0,54000.0,100000.0,20000.0]
 
-if !allowedEntry {
-    print("ACCESS DENIED")
-}
+print(employeeSalaries.count)
 
-// is the same as writing: 
+// Add to array:
 
-if allowedEntry != true {
-    print("ACCESS DENIED")
-}
+employeeSalaries.append(39000.0)
+
+print(employeeSalaries.count)
+
+// Remove from array:
+
+employeeSalaries.remove(at: 1)
+
+print(employeeSalaries.count)
+
+// example
+
+// this creates an empty array - it initalizes AND declares
+var students = [String]()
+
+print(students.count)
+
+// Add students
+students.append("Josh")
+students.append("Jimmy")
+students.append("Jody")
+students.append("Joe")
+
+students.remove(at: 1)
+print(students)
