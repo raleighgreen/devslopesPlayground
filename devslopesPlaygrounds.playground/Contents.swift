@@ -2,40 +2,16 @@
 
 import UIKit
 
-// Boolians
+// Logical NOT operator - unary prefix operator
 
-// Type inference
+let allowedEntry = false
 
-var amItrue = true
-
-// Explicitly declared:
-
-var amItrue2: Bool = true
-
-amItrue = false
-amItrue2 = false
-
-// Examples
-
-if true == false || true == true {
-    print("WTFish")
+if !allowedEntry {
+    print("ACCESS DENIED")
 }
 
-var hasDataFinishedDownloading: Bool  = false
-//...
-//...
-hasDataFinishedDownloading = true
-//Load UI and other app features
+// is the same as writing: 
 
-//
-
-// -------------
-// Comparison Operators:
-
-// Equal to: ==
-// Not equal to: !=
-// Greater than: >
-// Greater than of equal to: >=
-// Less than or equal to: <=
-// Less than: <
-
+if allowedEntry != true {
+    print("ACCESS DENIED")
+}
